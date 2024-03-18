@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import FilterList from '../components/FilterList.vue'
+import { films } from '../mock'
+import FilmCard from '../components/FilmCard.vue'
 </script>
 
 <template>
@@ -76,21 +78,8 @@ import FilterList from '../components/FilterList.vue'
       <FilterList />
 
       <div class="catalog__films-list">
-        <article class="small-film-card catalog__films-card">
-          <div class="small-film-card__image">
-            <img
-              src="../assets/img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
-              alt="Fantastic Beasts: The Crimes of Grindelwald"
-              width="280"
-              height="175"
-            />
-          </div>
-          <h3 class="small-film-card__title">
-            <a class="small-film-card__link" href="film-page.html"
-              >Fantastic Beasts: The Crimes of Grindelwald</a
-            >
-          </h3>
-        </article>
+        <FilmCard :name="films[0].name" :imageSrc="films[0].imageSrc" />
+        <!-- Film List -->
       </div>
 
       <div class="catalog__more">
