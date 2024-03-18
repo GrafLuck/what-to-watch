@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import FilterList from '../components/FilterList.vue'
+</script>
+
 <template>
   <section class="film-card">
     <div class="film-card__bg">
@@ -30,7 +34,12 @@
     <div class="film-card__wrap">
       <div class="film-card__info">
         <div class="film-card__poster">
-          <img src="../assets/img/the-grand-budapest-hotel-poster.jpg" alt="The Grand Budapest Hotel poster" width="218" height="327" />
+          <img
+            src="../assets/img/the-grand-budapest-hotel-poster.jpg"
+            alt="The Grand Budapest Hotel poster"
+            width="218"
+            height="327"
+          />
         </div>
 
         <div class="film-card__desc">
@@ -64,46 +73,22 @@
     <section class="catalog">
       <h2 class="catalog__title visually-hidden">Catalog</h2>
 
-      <ul class="catalog__genres-list">
-        <li class="catalog__genres-item catalog__genres-item--active">
-          <a href="#" class="catalog__genres-link">All genres</a>
-        </li>
-        <li class="catalog__genres-item">
-          <a href="#" class="catalog__genres-link">Comedies</a>
-        </li>
-        <li class="catalog__genres-item">
-          <a href="#" class="catalog__genres-link">Crime</a>
-        </li>
-        <li class="catalog__genres-item">
-          <a href="#" class="catalog__genres-link">Documentary</a>
-        </li>
-        <li class="catalog__genres-item">
-          <a href="#" class="catalog__genres-link">Dramas</a>
-        </li>
-        <li class="catalog__genres-item">
-          <a href="#" class="catalog__genres-link">Horror</a>
-        </li>
-        <li class="catalog__genres-item">
-          <a href="#" class="catalog__genres-link">Kids & Family</a>
-        </li>
-        <li class="catalog__genres-item">
-          <a href="#" class="catalog__genres-link">Romance</a>
-        </li>
-        <li class="catalog__genres-item">
-          <a href="#" class="catalog__genres-link">Sci-Fi</a>
-        </li>
-        <li class="catalog__genres-item">
-          <a href="#" class="catalog__genres-link">Thrillers</a>
-        </li>
-      </ul>
+      <FilterList />
 
       <div class="catalog__films-list">
         <article class="small-film-card catalog__films-card">
           <div class="small-film-card__image">
-            <img src="../assets/img/fantastic-beasts-the-crimes-of-grindelwald.jpg" alt="Fantastic Beasts: The Crimes of Grindelwald" width="280" height="175" />
+            <img
+              src="../assets/img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
+              alt="Fantastic Beasts: The Crimes of Grindelwald"
+              width="280"
+              height="175"
+            />
           </div>
           <h3 class="small-film-card__title">
-            <a class="small-film-card__link" href="film-page.html">Fantastic Beasts: The Crimes of Grindelwald</a>
+            <a class="small-film-card__link" href="film-page.html"
+              >Fantastic Beasts: The Crimes of Grindelwald</a
+            >
           </h3>
         </article>
       </div>
